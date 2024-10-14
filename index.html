@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <h3>Hangman</h3>
+    <form id="hangmanForm">
+        <label for="guessInput">Enter a letter or guess word:</label>
+        <input type="text" id="guessInput" maxlength="20" required>
+    </form>
+
+    <p>Number of guesses: <span id="guessCount">0</span></p>
+    <p>Try to guess this word:</p>
+    <p id="hiddenWord">********</p>
+
+    <div class="output"></div>
+
+    <script src="./js/functions.js"></script>
+</body>
+</html>
